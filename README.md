@@ -88,10 +88,11 @@ cv/
 
 The CV is optimized for printing and PDF generation:
 
-- **A4 Format**: Designed to fit on standard A4 paper
-- **Single Page**: All content fits on one page
-- **Print Styles**: Optimized fonts and spacing for print
-- **No Page Breaks**: Prevents content from splitting across pages
+- **A4 Format**: Designed to fit on standard A4 paper with optimized margins
+- **Compact Layout**: Reduced spacing and font sizes for maximum content density
+- **Smart Page Breaks**: Strategic page break management to minimize white space
+- **Print Styles**: Optimized fonts, spacing, and colors for print
+- **Efficient Flow**: Content flows naturally across pages without large gaps
 
 ## 🚀 Getting Started
 

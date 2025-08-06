@@ -16,11 +16,11 @@
     --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     
     /* Spacing - more compact for print */
-    --space-xs: 0.25rem;
-    --space-sm: 0.5rem;
-    --space-md: 0.75rem;
-    --space-lg: 1rem;
-    --space-xl: 1.25rem;
+    --space-xs: 0.2rem;
+    --space-sm: 0.4rem;
+    --space-md: 0.6rem;
+    --space-lg: 0.8rem;
+    --space-xl: 1rem;
 }
 
 * {
@@ -30,17 +30,17 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 13px; /* Reduced from 14px */
 }
 
 body {
     color: var(--text-primary);
     font-family: var(--font-family-sans);
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Reduced from 0.9rem */
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.3; /* Reduced from 1.4 */
     margin: 0;
-    padding: 20px;
+    padding: 15px; /* Reduced from 20px */
     background: var(--bg-primary);
 }
 
@@ -112,7 +112,7 @@ body {
 
 /* Sections */
 .section {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md); /* Reduced spacing */
     page-break-inside: avoid;
 }
 
@@ -120,7 +120,7 @@ body {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm); /* Reduced from var(--space-md) */
     padding-bottom: var(--space-xs);
     border-bottom: 1px solid var(--border-color);
 }
@@ -189,11 +189,11 @@ body {
 /* Work Experience */
 .experience-list {
     display: grid;
-    gap: var(--space-md);
+    gap: var(--space-sm); /* Reduced from var(--space-md) */
 }
 
 .experience-item {
-    padding: var(--space-md);
+    padding: var(--space-sm); /* Reduced padding */
     background: var(--bg-secondary);
     border-radius: 6px;
     page-break-inside: avoid;
@@ -203,27 +203,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-xs); /* Already minimal */
 }
 
 .job-title {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly reduced */
     font-weight: 600;
     color: var(--text-primary);
     margin: 0;
 }
 
 .duration {
-    font-size: 0.8rem;
+    font-size: 0.75rem; /* Reduced */
     color: var(--text-muted);
     font-weight: 500;
 }
 
 .company {
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Reduced */
     font-weight: 500;
     color: var(--primary-color);
-    margin: 0 0 var(--space-sm) 0;
+    margin: 0 0 var(--space-xs) 0; /* Reduced bottom margin */
 }
 
 .achievements {
@@ -233,11 +233,11 @@ body {
 }
 
 .achievements li {
-    font-size: 0.85rem;
-    line-height: 1.4;
+    font-size: 0.8rem; /* Reduced from 0.85rem */
+    line-height: 1.3; /* Reduced from 1.4 */
     color: var(--text-secondary);
-    margin-bottom: var(--space-xs);
-    padding-left: var(--space-md);
+    margin-bottom: 2px; /* Reduced from var(--space-xs) */
+    padding-left: var(--space-sm); /* Reduced padding */
     position: relative;
 }
 
@@ -301,27 +301,46 @@ body {
 @media print {
     @page {
         size: A4;
-        margin: 0.5in;
+        margin: 0.4in 0.5in; /* Reduced margins for more content space */
     }
     
     body {
         padding: 0 !important;
-        font-size: 11px !important;
-        line-height: 1.3 !important;
+        font-size: 10px !important; /* Smaller font for more content */
+        line-height: 1.2 !important; /* Tighter line height */
     }
     
     .container {
         max-width: none !important;
     }
     
+    /* Remove page-break-inside: avoid to allow better flow */
     .section {
-        page-break-inside: avoid;
-        break-inside: avoid;
+        page-break-inside: auto;
+        break-inside: auto;
+        margin-bottom: var(--space-md); /* Reduced spacing */
     }
     
     .experience-item {
-        page-break-inside: avoid;
-        break-inside: avoid;
+        page-break-inside: auto;
+        break-inside: auto;
+        margin-bottom: var(--space-sm); /* Reduced spacing between items */
+    }
+    
+    /* Allow strategic page breaks */
+    .section:not(:first-child) {
+        page-break-before: auto;
+    }
+    
+    /* Keep only critical elements together */
+    .experience-header {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+    
+    .section-header {
+        page-break-after: avoid;
+        break-after: avoid;
     }
     
     .header-section {
