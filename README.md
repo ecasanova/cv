@@ -18,6 +18,27 @@ cv/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles and print optimizations
 ├── assets/             # Images and resources
+│   ├── 1059972.png     # Profile photo
+│   ├── icons/          # Icon images
+│   │   ├── books.png       # Education section icon
+│   │   ├── brain.png       # Technical skills icon
+│   │   ├── briefcase.png   # Work experience icon
+│   │   ├── developer.png   # Professional summary icon
+│   │   ├── email.png       # Email contact icon
+│   │   ├── globe.png       # Languages section icon
+│   │   ├── link.png        # Social links icon
+│   │   ├── location.png    # Location icon
+│   │   └── phone.png       # Phone contact icon
+│   └── twemoji.min.js  # Twitter emoji library
+├── .gitignore          # Git ignore file
+└── README.md           # This file
+```
+
+```text
+cv/
+├── index.html          # Main HTML file
+├── styles.css          # CSS styles and print optimizations
+├── assets/             # Images and resources
 │   ├── profile.png     # Profile photo
 │   ├── *.png           # Emoji icons
 │   └── twemoji.min.js  # Twitter emoji library
