@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,400i,500,500i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i,800,800i");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    color: #222;
+    font-family: "Work Sans", "Inter", 'Noto Sans SC';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: auto;
+    padding: 48px;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+
+img.emoji {
+    border-radius: 0;
+    float: none !important;
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0.5in;
+    }
+    
+    body {
+        padding: 10px !important;
+        font-size: 10px !important;
+        line-height: 1.3 !important;
+    }
+    
+    h1 {
+        font-size: 24px !important;
+        margin-top: 0 !important;
+        margin-bottom: 5px !important;
+    }
+    
+    h2 {
+        font-size: 16px !important;
+        margin-top: 10px !important;
+        margin-bottom: 5px !important;
+        page-break-after: avoid;
+    }
+    
+    h3 {
+        font-size: 14px !important;
+        margin-top: 8px !important;
+        margin-bottom: 3px !important;
+        page-break-after: avoid;
+    }
+    
+    p {
+        margin-top: 3px !important;
+        margin-bottom: 3px !important;
+    }
+    
+    ul {
+        margin-top: 3px !important;
+        margin-bottom: 5px !important;
+    }
+    
+    li {
+        margin-bottom: 1px !important;
+    }
+    
+    hr {
+        margin: 8px 0 !important;
+        page-break-after: avoid;
+    }
+    
+    img {
+        max-width: 100px !important;
+        height: auto !important;
+        max-height: 100px !important;
+    }
+    
+    .page-break {
+        display: none;
+    }
+    
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+    
+    /* Evitar saltos de página en secciones */
+    .row {
+        page-break-inside: avoid;
+    }
+    
+    /* Compactar espacios */
+    * {
+        page-break-inside: avoid;
+    }
+    
+    /* Permitir saltos solo en lugares específicos si es necesario */
+    h2 {
+        page-break-before: auto;
+    }
+}
+
+.page-break {
+    margin: 2em 0;
+    border-bottom: 1px dashed #AAA;
+    border-top: 1px dashed #AAA;
+}
+
+.page-break:before {
+    color: #AAA;
+    content: 'Page Break';
+    display: block;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", "Inter", 'Noto Sans SC';
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-top: 1em;
+    font-weight: 700;
+    border-bottom: 1px solid #2ecc71;
+    border-bottom-style: dashed;
+    display: inline-block;
+    position: relative;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: .5em;
+    font-weight: 600;
+}
+
+h4, h5, h6 {
+    font-size: 1.8rem;
+    margin-top: .4em;
+    font-weight: 700;
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+h1 b, h1 strong {
+    font-weight: 700;
+}
+
+h2 b, h2 strong, h3 b, h3 strong, h4 b, h4 strong, h5 b, h5 strong, h6 b, h6 strong {
+    font-weight: 800;
+}
+
+i, em {
+    font-style: italic;
+}
+
+ul, ol {
+    margin-top: .5em;
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+ul li, ol li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul li:before, ol li:before {
+    content: '-';
+    font-weight: bold;
+    margin-right: .5em;
+    left: -16px;
+    position: absolute;
+}
+
+h3 + ul {
+    margin-top: 0;
+}
+
+a {
+    color: #222;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+code {
+    background-color: rgba(46, 204, 113, 0.15) !important;
+    border-radius: 2px;
+    color: #1b7943;
+    font-weight: 500;
+    padding: 0 4px;
+    font-family: inherit;
+}
+
+pre {
+    font-family: inherit;
+}
+
+pre code {
+    display: block;
+}
+
+p {
+    margin-top: .5em;
+}
+
+p.pull-right {
+    float: right;
+    margin-right: 4px;
+    margin-top: -1.5em;
+    text-align: right;
+}
+
+h3 + p {
+    margin-top: .2em;
+}
+
+li > p {
+    margin-top: 0;
+}
+
+table {
+    margin-top: .5em;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table th, table tr {
+    font-weight: normal;
+}
+
+table.no-margin {
+    margin: 0 !important;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #2ecc71;
+    margin: 1em 0;
+}
+
+img {
+    border-radius: 50%;
+    float: left;
+    height: 18rem;
+    margin-right: 2rem;
+}
+
+::-moz-selection {
+    background-color: rgba(46, 204, 113, 0.2);
+}
+
+::selection {
+    background-color: rgba(46, 204, 113, 0.2);
+}
+
+.row.row--section {
+    display: flex;
+}
+
+.row.row--section .column.column--1-1 {
+    flex: 100%;
+}
+
+.row.row--section .column.column--1-2 {
+    flex: 66%;
+    padding-right: 3rem;
+}
+
+.row.row--section .column.column--2-2 {
+    flex: 34%;
+    padding-left: 3rem;
+}
