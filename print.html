@@ -205,5 +205,22 @@
             </div>
         </section>
     </div>
+    
+    <script>
+        // Auto-trigger print dialog when page loads (if opened from download button)
+        window.addEventListener('load', function() {
+            // Check if this page was opened for printing (via URL parameter or referrer)
+            const urlParams = new URLSearchParams(window.location.search);
+            const isPrintRequest = urlParams.get('print') === 'true' || 
+                                   document.referrer.includes('index.html') ||
+                                   window.opener;
+            
+            if (isPrintRequest) {
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            }
+        });
+    </script>
 </body>
 </html>

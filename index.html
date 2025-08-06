@@ -460,31 +460,18 @@
         });
 
         // Function to download resume as PDF
-        async function downloadResume() {
+        function downloadResume() {
+            // Open print.html with print parameter to trigger auto-print
             try {
-                // Fetch the print version content
-                const response = await fetch('print.html');
-                const htmlContent = await response.text();
-                
-                // Create a new window for printing
-                const printWindow = window.open('', '_blank');
-                printWindow.document.write(htmlContent);
-                printWindow.document.close();
-                
-                // Wait for content to load, then trigger print
-                printWindow.onload = function() {
-                    setTimeout(() => {
-                        printWindow.print();
-                        // Close the window after printing
-                        setTimeout(() => {
-                            printWindow.close();
-                        }, 1000);
-                    }, 500);
-                };
+                const printWindow = window.open('print.html?print=true', '_blank');
+                if (!printWindow) {
+                    // If popup blocked, redirect to print page with print parameter
+                    window.open('print.html?print=true', '_self');
+                }
             } catch (error) {
-                console.error('Error downloading resume:', error);
-                // Fallback to current page print
-                window.print();
+                console.error('Error opening print version:', error);
+                // Fallback: redirect to print page
+                window.open('print.html?print=true', '_self');
             }
         }
     </script>
