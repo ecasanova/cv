@@ -5,208 +5,488 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Enrique Casanova - Full Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="web-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="row row--section">
-        <div class="column column--1-1">
-            <div>
-                <img src="./assets/profile.png" alt="Enrique Casanova">
-                <h1>Enrique Casanova</h1>
-                <h3 style="margin: 0px;">Full Stack Developer</h3>
-                <p>
-                    <img draggable="false" class="emoji" alt="📍" src="./assets/icons/location.png"> Medellín, Colombia<br>
-                    <img draggable="false" class="emoji" alt="📧" src="./assets/icons/email.png"> contact@enriquecasanova.com<br>
-                    <img draggable="false" class="emoji" alt="📞" src="./assets/icons/phone.png"> +57 310 349 3540<br>
-                    <img draggable="false" class="emoji" alt="🔗" src="./assets/icons/link.png"> 
-                    <a href="https://www.linkedin.com/in/ecasanovave/">LinkedIn</a> | 
-                    <a href="https://github.com/ecasanova">GitHub</a>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header-section">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="./assets/profile.png" alt="Enrique Casanova" class="profile-image">
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">Enrique Casanova</h1>
+                    <p class="title">Senior Software Engineer - Full Stack</p>
+                    <div class="action-buttons">
+                        <button onclick="downloadResume()" class="download-btn">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Medellín, Colombia</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@enriquecasanova.com">contact@enriquecasanova.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+57 310 349 3540</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/ecasanovave/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/ecasanova" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <div class="section-header">
+                <i class="fas fa-user-tie section-icon"></i>
+                <h2>Professional Summary</h2>
+            </div>
+            <div class="summary-content">
+                <div class="highlight-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">18+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Team Members Led</span>
+                    </div>
+                </div>
+                <p class="summary-text">
+                    <strong>Senior Full Stack Developer</strong> with 18+ years of experience building scalable web applications 
+                    using <span class="tech-highlight">React, Node.js, and TypeScript</span>. Proven leader who has 
+                    managed cross-functional teams and delivered enterprise solutions for clients across 
+                    <strong>e-commerce, healthcare, fintech, and telecom industries</strong>.
                 </p>
+                <div class="key-strengths">
+                    <div class="strength-item">
+                        <i class="fas fa-rocket"></i>
+                        <span>Performance Optimization Expert</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-users"></i>
+                        <span>Team Leadership & Mentoring</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Full-Stack Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <div class="section-header">
+                <i class="fas fa-code section-icon"></i>
+                <h2>Technical Skills</h2>
+            </div>
+            
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <i class="fas fa-laptop-code"></i>
+                    Frontend
+                </h3>
+                <div class="tech-badges">
+                    <span class="tech-badge expert">React</span>
+                    <span class="tech-badge expert">Next.js</span>
+                    <span class="tech-badge advanced">TypeScript</span>
+                    <span class="tech-badge advanced">JavaScript</span>
+                    <span class="tech-badge intermediate">React Native</span>
+                    <span class="tech-badge intermediate">AngularJS</span>
+                    <span class="tech-badge advanced">HTML5</span>
+                    <span class="tech-badge advanced">CSS3</span>
+                    <span class="tech-badge intermediate">Tailwind CSS</span>
+                    <span class="tech-badge intermediate">Playwright</span>
+                    <span class="tech-badge intermediate">Jest</span>
+                </div>
             </div>
 
-            <hr>
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <i class="fas fa-server"></i>
+                    Backend
+                </h3>
+                <div class="tech-badges">
+                    <span class="tech-badge expert">Node.js</span>
+                    <span class="tech-badge advanced">Express</span>
+                    <span class="tech-badge advanced">NestJS</span>
+                    <span class="tech-badge expert">PostgreSQL</span>
+                    <span class="tech-badge advanced">MySQL</span>
+                    <span class="tech-badge intermediate">MongoDB</span>
+                    <span class="tech-badge advanced">Prisma</span>
+                    <span class="tech-badge intermediate">TypeORM</span>
+                    <span class="tech-badge intermediate">Sequelize</span>
+                    <span class="tech-badge advanced">GraphQL</span>
+                    <span class="tech-badge advanced">REST APIs</span>
+                </div>
+            </div>
 
-            <h2>
-                <img draggable="false" class="emoji" alt="🧑‍💻" src="./assets/icons/developer.png"> 
-                Professional Summary
-            </h2>
-            <p>
-                Full Stack Developer with <strong>18+ years of experience</strong> in web and mobile development. 
-                Specialized in building robust, scalable applications using modern JavaScript frameworks like 
-                <strong>React, Node.js, and TypeScript</strong>, with deep integration of <strong>REST APIs</strong> 
-                and <strong>GraphQL</strong>.
-            </p>
-            <p>
-                Proven track record in team leadership, architectural planning, and delivering scalable solutions 
-                across industries like e-commerce, healthcare, fintech, and telecom.
-            </p>
-            <p>
-                As a seasoned Full Stack Web Developer, I specialize in building robust web applications using 
-                React and TypeScript. I have extensive experience in integrating both RESTful APIs and GraphQL, 
-                enabling efficient data interactions in complex software environments.
-            </p>
-            <p>
-                My expertise extends to managing database systems, including RDS SQL databases and NoSQL solutions, 
-                ensuring data integrity and performance. I am adept at translating business requirements into 
-                technical solutions that are scalable, maintainable, and user-centric.
-            </p>
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <i class="fas fa-tools"></i>
+                    Tools & Workflow
+                </h3>
+                <div class="tech-badges">
+                    <span class="tech-badge expert">Git</span>
+                    <span class="tech-badge expert">GitHub</span>
+                    <span class="tech-badge advanced">GitHub Actions</span>
+                    <span class="tech-badge expert">VS Code</span>
+                    <span class="tech-badge intermediate">Figma</span>
+                    <span class="tech-badge intermediate">Jira</span>
+                    <span class="tech-badge intermediate">Confluence</span>
+                    <span class="tech-badge advanced">ChatGPT</span>
+                    <span class="tech-badge advanced">GitHub Copilot</span>
+                </div>
+            </div>
 
-            <hr>
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <i class="fas fa-cloud"></i>
+                    DevOps & Cloud
+                </h3>
+                <div class="tech-badges">
+                    <span class="tech-badge advanced">AWS</span>
+                    <span class="tech-badge intermediate">Amplify</span>
+                    <span class="tech-badge intermediate">Cognito</span>
+                    <span class="tech-badge intermediate">Lambda</span>
+                    <span class="tech-badge intermediate">S3</span>
+                    <span class="tech-badge advanced">RDS</span>
+                    <span class="tech-badge intermediate">ECS</span>
+                    <span class="tech-badge intermediate">EC2</span>
+                    <span class="tech-badge advanced">Docker</span>
+                    <span class="tech-badge intermediate">Serverless</span>
+                    <span class="tech-badge intermediate">Vercel</span>
+                    <span class="tech-badge intermediate">Netlify</span>
+                    <span class="tech-badge intermediate">Cloudflare</span>
+                </div>
+            </div>
+        </section>
 
-            <h2>
-                <img draggable="false" class="emoji" alt="🧠" src="./assets/icons/brain.png"> 
-                Technical Skills
-            </h2>
-            
-            <h3>Frontend</h3>
-            <ul>
-                <li><p>React / Next.js / AngularJS / React Native</p></li>
-                <li><p>JavaScript / TypeScript / HTML / CSS / Tailwind CSS</p></li>
-                <li><p>Playwright / Jest</p></li>
-            </ul>
+        <!-- Work Experience -->
+        <section class="section">
+            <div class="section-header">
+                <i class="fas fa-briefcase section-icon"></i>
+                <h2>Work Experience</h2>
+            </div>
 
-            <h3>Backend</h3>
-            <ul>
-                <li><p>Node.js / Express / NestJS</p></li>
-                <li><p>PostgreSQL / MySQL / MongoDB</p></li>
-                <li><p>Prisma / TypeORM / Sequelize</p></li>
-            </ul>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Lead Software Engineer</h3>
+                            <p class="company">Stellar Elements (Amdocs)</p>
+                            <p class="duration">Jan 2022 – Present <span class="current-badge">Current</span></p>
+                        </div>
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-users"></i>
+                            <span><strong>Led 4-5 engineers</strong> across multiple stages: 1:1s, hiring, mentoring, and career planning</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Developed <strong>headless websites and web platforms</strong> using React, GraphQL Serverless, and PostgreSQL</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>Oversaw projects for <strong>major clients across North America</strong></span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">GraphQL</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">Serverless</span>
+                    </div>
+                </div>
 
-            <h3>Tools</h3>
-            <ul>
-                <li><p>Git / GitHub / GitHub Actions</p></li>
-                <li><p>Visual Studio Code / Figma / Jira / Confluence</p></li>
-                <li><p>ChatGPT / GitHub Copilot</p></li>
-            </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Senior Software Engineer / Manager</h3>
+                            <p class="company">Projekt202 (ADK Group)</p>
+                            <p class="duration">Jul 2022 – Jun 2023</p>
+                        </div>
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-arrow-up"></i>
+                            <span><strong>Promoted to Manager within 3 months</strong></span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-users"></i>
+                            <span>Oversaw <strong>5 engineers</strong>, focused on building web apps</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-code"></i>
+                            <span>Built applications using React, Contentful, Strapi, and Node.js</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Contentful</span>
+                        <span class="tech-pill">Strapi</span>
+                        <span class="tech-pill">Node.js</span>
+                    </div>
+                </div>
 
-            <h3>DevOps &amp; Cloud</h3>
-            <ul>
-                <li><p>AWS (Amplify, Cognito, Lambda, S3, RDS, ECS, EC2)</p></li>
-                <li><p>Docker / Serverless / Vercel / Netlify / Cloudflare</p></li>
-            </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Team Lead – Full Stack Developer</h3>
+                            <p class="company">RV Dev</p>
+                            <p class="duration">Jul 2020 – Jan 2022</p>
+                        </div>
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-heart-pulse"></i>
+                            <span>Led <strong>telehealth and e-commerce initiatives</strong></span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-plug"></i>
+                            <span>Integrated payment gateways, EHR systems, customer service tools</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Shopify</span>
+                        <span class="tech-pill">WordPress</span>
+                        <span class="tech-pill">Stripe</span>
+                    </div>
+                </div>
 
-            <hr>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Software Engineer</h3>
+                            <p class="company">Cheil Worldwide / Samsung</p>
+                            <p class="duration">Jul 2019 – Jul 2020</p>
+                        </div>
+                        <div class="company-logo">
+                            <i class="fab fa-samsung"></i>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Built <strong>Samsung salesforce monitoring app</strong> for Colombia, Panama, and India</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Angular 8</span>
+                        <span class="tech-pill">Material UI</span>
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">React Native</span>
+                    </div>
+                </div>
 
-            <h2>
-                <img draggable="false" class="emoji" alt="💼" src="./assets/icons/briefcase.png"> 
-                Work Experience
-            </h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Senior Full Stack Developer</h3>
+                            <p class="company">Wikot</p>
+                            <p class="duration">Apr 2015 – Jun 2019</p>
+                        </div>
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Managed projects for <strong>Samsung, Volkswagen, Pernod Ricard</strong></span>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Deployed infrastructure on Linode and AWS, integrated with Salesforce Marketing Cloud</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-pill">AWS</span>
+                        <span class="tech-pill">Salesforce</span>
+                        <span class="tech-pill">Linode</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h3><strong>Lead Software Engineer</strong></h3>
-            <p><strong>Stellar Elements (Amdocs)</strong> | <em>Jan 2022 – Present</em></p>
-            <ul>
-                <li>
-                    <p>Led 4–5 engineers across multiple stages: 1:1s, hiring, mentoring, and career planning.</p>
-                </li>
-                <li>
-                    <p>Developed headless websites and web platforms using <strong>React</strong>, 
-                    <strong>GraphQL Serverless</strong>, and <strong>PostgreSQL</strong>.</p>
-                </li>
-                <li>
-                    <p>Oversaw projects for major clients across North America.</p>
-                </li>
-            </ul>
+        <!-- Education & Certifications -->
+        <section class="section">
+            <div class="section-header">
+                <i class="fas fa-graduation-cap section-icon"></i>
+                <h2>Education & Certifications</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Electronic Engineer</h3>
+                        <p>Universidad Central de Venezuela</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Web Project Manager</h3>
+                        <p>Escuela Web</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fab fa-ibm"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>IBM Certifications</h3>
+                        <ul class="cert-list">
+                            <li>E-Business Application Developer</li>
+                            <li>Programming Fundamentals</li>
+                            <li>IT and Networking Fundamentals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h3><strong>Team Lead – Full Stack Developer</strong></h3>
-            <p><strong>RV Dev</strong> | <em>Jul 2020 – Jan 2022</em></p>
-            <ul>
-                <li>
-                    <p>Led telehealth and e-commerce initiatives using <strong>React, Node.js, Shopify, and WordPress</strong>.</p>
-                </li>
-                <li>
-                    <p>Integrated payment gateways, EHR systems, customer service tools (Stripe, Rekognition, Recharge, Klaviyo, Gorgias).</p>
-                </li>
-            </ul>
-
-            <h3><strong>Senior Software Engineer / Manager</strong></h3>
-            <p><strong>Projekt202 (ADK Group)</strong> | <em>Jul 2022 – Jun 2023</em></p>
-            <ul>
-                <li>
-                    <p>Promoted within 3 months to Manager.</p>
-                </li>
-                <li>
-                    <p>Oversaw 5 engineers, focused on building web apps using <strong>React</strong>, 
-                    <strong>Contentful</strong>, <strong>Strapi</strong>, and <strong>Node.js</strong>.</p>
-                </li>
-            </ul>
-
-            <h3><strong>Software Engineer</strong></h3>
-            <p><strong>Cheil Worldwide / Samsung</strong> | <em>Jul 2019 – Jul 2020</em></p>
-            <ul>
-                <li>
-                    <p>Built Samsung salesforce monitoring app for Colombia, Panama, and India using 
-                    <strong>Angular 8</strong>, <strong>Material UI</strong>, <strong>React</strong>, and <strong>React Native</strong>.</p>
-                </li>
-            </ul>
-
-            <h3><strong>Senior Full Stack Developer</strong></h3>
-            <p><strong>Wikot</strong> | <em>Apr 2015 – Jun 2019</em></p>
-            <ul>
-                <li>
-                    <p>Managed projects for clients like Samsung, Volkswagen, Pernod Ricard.</p>
-                </li>
-                <li>
-                    <p>Deployed infrastructure on <strong>Linode</strong> and <strong>AWS</strong>, 
-                    integrated with <strong>Salesforce Marketing Cloud</strong>.</p>
-                </li>
-            </ul>
-
-            <h3><strong>Additional Freelance and Engineering Roles</strong></h3>
-            <ul>
-                <li>
-                    <p><strong>WordPress Developer</strong> (Inspirulina, 2011–2019): Full portal admin, 
-                    server ops (Rackspace, DigitalOcean), AdServer integration.</p>
-                </li>
-                <li>
-                    <p><strong>Web Dev Manager</strong> (Cinex / Evenpro): Innovation projects and transactional platform.</p>
-                </li>
-                <li>
-                    <p><strong>Freelance PHP Dev</strong> (Hotels, Otusnet): Built online booking systems and government apps.</p>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2>
-                <img draggable="false" class="emoji" alt="📚" src="./assets/icons/books.png"> 
-                Education &amp; Certifications
-            </h2>
-            <ul>
-                <li>
-                    <p><strong>Electronic Engineer</strong> — Universidad Central de Venezuela</p>
-                </li>
-                <li>
-                    <p><strong>Web Project Manager</strong> — Escuela Web</p>
-                </li>
-                <li>
-                    <p><strong>IBM Certifications</strong>:</p>
-                    <ul>
-                        <li>E-Business Application Developer</li>
-                        <li>Programming Fundamentals</li>
-                        <li>IT and Networking Fundamentals</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <hr>
-
-            <h2>
-                <img draggable="false" class="emoji" alt="🌍" src="./assets/icons/globe.png"> 
-                Languages
-            </h2>
-            <ul>
-                <li><p>Spanish: Native</p></li>
-                <li><p>English: Professional Proficiency</p></li>
-            </ul>
-        </div>
+        <!-- Languages -->
+        <section class="section">
+            <div class="section-header">
+                <i class="fas fa-globe section-icon"></i>
+                <h2>Languages</h2>
+            </div>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <div class="language-info">
+                        <span class="language-name">Spanish</span>
+                        <span class="language-level native">Native</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-info">
+                        <span class="language-name">English</span>
+                        <span class="language-level professional">Professional</span>
+                    </div>
+                    <div class="language-bar">
+                        <div class="language-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="./assets/twemoji.min.js"></script>
     <script>
-        twemoji.parse(
-            document.body,
-            { base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }
-        );
+        // Smooth scroll for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation to sections
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Add hover effects to tech badges
+            const techBadges = document.querySelectorAll('.tech-badge');
+            techBadges.forEach(badge => {
+                badge.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px) scale(1.05)';
+                });
+                badge.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Add typing effect to name
+            const nameElement = document.querySelector('.name');
+            if (nameElement) {
+                const originalText = nameElement.textContent;
+                nameElement.textContent = '';
+                let i = 0;
+                const typeWriter = () => {
+                    if (i < originalText.length) {
+                        nameElement.textContent += originalText.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100);
+                    }
+                };
+                setTimeout(typeWriter, 500);
+            }
+        });
+
+        // Function to download resume as PDF
+        async function downloadResume() {
+            try {
+                // Fetch the print version content
+                const response = await fetch('print.html');
+                const htmlContent = await response.text();
+                
+                // Create a new window for printing
+                const printWindow = window.open('', '_blank');
+                printWindow.document.write(htmlContent);
+                printWindow.document.close();
+                
+                // Wait for content to load, then trigger print
+                printWindow.onload = function() {
+                    setTimeout(() => {
+                        printWindow.print();
+                        // Close the window after printing
+                        setTimeout(() => {
+                            printWindow.close();
+                        }, 1000);
+                    }, 500);
+                };
+            } catch (error) {
+                console.error('Error downloading resume:', error);
+                // Fallback to current page print
+                window.print();
+            }
+        }
     </script>
 </body>
 </html>

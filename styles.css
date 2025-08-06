@@ -297,3 +297,54 @@ img {
     flex: 34%;
     padding-left: 3rem;
 }
+
+/* Download Button Styles */
+.action-buttons {
+    margin: 1rem 0;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(46, 204, 113, 0.4);
+}
+
+.download-btn i {
+    font-size: 1.2rem;
+}
+
+/* Responsive styles for download button */
+@media (max-width: 768px) {
+    .action-buttons {
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+    
+    .download-btn {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media print {
+    .action-buttons,
+    .download-btn {
+        display: none !important;
+    }
+}

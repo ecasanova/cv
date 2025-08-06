@@ -4,12 +4,17 @@ A modern, responsive HTML/CSS resume website for Enrique Casanova, Full Stack De
 
 ## 🚀 Features
 
-- **Clean Design**: Professional and modern layout
-- **Responsive**: Works on desktop, tablet, and mobile devices
+- **Modern Design**: Professional and contemporary layout with gradient backgrounds
+- **Responsive**: Works perfectly on desktop, tablet, and mobile devices
 - **Print-Ready**: Optimized for PDF generation and printing
-- **Interactive**: Clickable links to LinkedIn and GitHub profiles
-- **Emoji Icons**: Fun and modern emoji icons for visual appeal
-- **Selectable Text**: All text is selectable for easy copying
+- **Interactive**: Clickable links with hover effects and smooth animations
+- **Tech Badges**: Modern skill badges with difficulty levels (Expert, Advanced, Intermediate)
+- **Animated Elements**: Smooth transitions, fade-ins, typing effects, and micro-interactions
+- **Professional Icons**: Font Awesome icons for a clean, modern look
+- **Statistics Cards**: Highlighted career statistics and achievements
+- **Timeline Experience**: Visual timeline for work experience with company logos
+- **Color-Coded Skills**: Different colors for skill levels and categories
+- **Optimized Performance**: Fast loading with modern CSS and animations
 
 ## 📁 Project Structure
 
@@ -48,39 +53,55 @@ cv/
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with flexbox
-- **JavaScript**: Emoji rendering with Twemoji
-- **Google Fonts**: Poppins, Work Sans, Inter, and Noto Sans SC
+- **HTML5**: Semantic markup with modern structure
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and CSS Variables
+- **JavaScript**: Interactive elements and animations
+- **Font Awesome**: Professional icon library
+- **Google Fonts**: Inter and JetBrains Mono typography
+- **CSS Animations**: Smooth transitions, keyframes, and micro-interactions
 
 ## 🎨 Design Features
 
 ### Typography
 
-- **Primary Font**: Work Sans (body text)
-- **Heading Font**: Poppins (headings)
-- **Fallback Fonts**: Inter, Noto Sans SC
+- **Primary Font**: Inter (modern, readable sans-serif)
+- **Monospace Font**: JetBrains Mono (for code elements)
+- **Hierarchy**: Multiple font weights (300-800) for visual hierarchy
 
 ### Color Scheme
 
-- **Primary Color**: #2ecc71 (Green)
-- **Text Color**: #222 (Dark Gray)
-- **Accent Color**: #1b7943 (Dark Green for code)
+- **Primary Color**: #6366f1 (Modern Indigo)
+- **Secondary Color**: #06b6d4 (Cyan Blue)  
+- **Accent Color**: #10b981 (Emerald Green)
+- **Text Colors**: Dark gray hierarchy for readability
+- **Backgrounds**: Subtle gradients and light tones
 
-### Layout
+### Modern Features
 
-- **Single Column**: Clean, focused layout
-- **Responsive Design**: Adapts to different screen sizes
-- **Print Optimized**: Fits nicely on A4 paper
+- **CSS Variables**: Consistent design system
+- **Gradient Backgrounds**: Modern visual appeal
+- **Box Shadows**: Depth and elevation
+- **Border Radius**: Consistent rounded corners
+- **Hover Effects**: Interactive feedback
+- **Animations**: Smooth transitions and keyframe animations
 
 ## 📄 Sections
 
-1. **Header**: Name, title, and contact information
-2. **Professional Summary**: Overview of experience and skills
-3. **Technical Skills**: Organized by category (Frontend, Backend, Tools, DevOps)
-4. **Work Experience**: Detailed employment history
-5. **Education & Certifications**: Academic background and certifications
-6. **Languages**: Language proficiency
+1. **Header**: Modern profile with gradient background, contact info, and status indicator
+2. **Professional Summary**: Statistics cards, key strengths, and optimized description
+3. **Technical Skills**: Color-coded badges with skill levels (Expert, Advanced, Intermediate)
+4. **Work Experience**: Timeline layout with achievements, tech stacks, and company info
+5. **Education & Certifications**: Grid layout with icons and detailed information
+6. **Languages**: Progress bars and skill level indicators
+
+## 🎭 Interactive Features
+
+- **Typing Animation**: Name appears with typewriter effect
+- **Fade-in Sections**: Content animates as you scroll
+- **Hover Effects**: Badges and cards respond to mouse interaction
+- **Smooth Transitions**: All elements have polished animations
+- **Status Indicator**: Animated availability status
+- **Tech Badge Levels**: Visual skill level representation
 
 ## 🖨️ Print Features
 
