@@ -20,32 +20,13 @@ A modern, responsive HTML/CSS resume website for Enrique Casanova, Full Stack De
 
 ```text
 cv/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and print optimizations
-├── assets/             # Images and resources
-│   ├── 1059972.png     # Profile photo
-│   ├── icons/          # Icon images
-│   │   ├── books.png       # Education section icon
-│   │   ├── brain.png       # Technical skills icon
-│   │   ├── briefcase.png   # Work experience icon
-│   │   ├── developer.png   # Professional summary icon
-│   │   ├── email.png       # Email contact icon
-│   │   ├── globe.png       # Languages section icon
-│   │   ├── link.png        # Social links icon
-│   │   ├── location.png    # Location icon
-│   │   └── phone.png       # Phone contact icon
-│   └── twemoji.min.js  # Twitter emoji library
-├── .gitignore          # Git ignore file
-└── README.md           # This file
-```
-
-```text
-cv/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and print optimizations
+├── index.html          # Main web version with modern design
+├── print.html          # Print-optimized version for PDF generation
+├── web-styles.css      # Modern CSS styles for web version
+├── print-styles.css    # Optimized CSS styles for print version
+├── styles.css          # Legacy CSS file (deprecated)
 ├── assets/             # Images and resources
 │   ├── profile.png     # Profile photo
-│   ├── *.png           # Emoji icons
 │   └── twemoji.min.js  # Twitter emoji library
 ├── .gitignore          # Git ignore file
 └── README.md           # This file
@@ -116,12 +97,20 @@ The CV is optimized for printing and PDF generation:
 
 ### Viewing the CV
 
-1. **Local Viewing**: Open `index.html` in any modern web browser
-2. **Live Server**: Use a local development server for best results
+1. **Web Version**: Open `index.html` in any modern web browser for the interactive version
+2. **Print Version**: Open `print.html` directly for the print-optimized layout
+3. **Live Server**: Use a local development server for best results
 
-### Printing to PDF
+### Downloading as PDF
 
-1. Open the CV in your browser
+#### Option 1: Direct Download Button
+1. Open `index.html` in your browser
+2. Click the "Download Resume" button in the top-right corner
+3. The print dialog will open with the optimized print version
+4. Select "Save as PDF" as the destination
+
+#### Option 2: Manual Print
+1. Open `print.html` directly in your browser
 2. Press `Ctrl+P` (Windows) or `Cmd+P` (Mac)
 3. Select "Save as PDF" as the destination
 4. Choose A4 paper size for best results
