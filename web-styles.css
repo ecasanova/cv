@@ -1018,3 +1018,9 @@ body {
         transition-delay: 0s !important;
     }
 }
+
+/* Founder Of section links */
+a.strength-item {
+    text-decoration: none;
+    color: inherit;
+}
