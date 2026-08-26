@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.enriquecasanova.com/sitemap.xml
